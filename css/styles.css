@@ -1,1 +1,83 @@
 /* rinella css */
+
+/* fonts 
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+
+/* ============
+gloabal
+============ */
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+}
+    
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============
+typography
+============ */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.3125rem;
+}
+/* adjacent sibling combinatorr */
+h1 + p {
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+}
+
+h2 + P {
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #f18119;
+    text-transform: uppercase;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* ============
+latout
+============ */
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .intro {
+    background-image: url(/images/bbq-pic1-min.jpg);
+    background-position: center;
+    background-size: cover;
+}*/
+
