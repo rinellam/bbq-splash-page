@@ -11,66 +11,25 @@
 </head>
 
 <body>
-
-    <div class="container">
-
-        <div class="intro">
-                <div class="contain-content contain-intro">
-                        <h1>Learn how to make <strong>the best BBQ ribs</strong> in Texas</h1>
-                        <p>Join us for this live webinar</p>
-                        <p class="top-text">Mouthwateringly delicious!</p>
-                </div>
-        </div>
+    <div class="intro">
+        <h1>Learn how to make <strong>the best BBQ ribs</strong> in town</h1>
+        <p>Join us for this live webinar</p>
+        <p class="top-text">Mouthwateringly delicious</p>
+    </div>
+    
+    <div class="main-content">
+        <h2>Become a BBQ master! </h2>
+        <p>Register Today</p>
+        <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
         
-        <div class="main-content">
-                <div class="contain-content">
-                    <h2>Become a BBQ master!</h2>
-                    <p>Register Today</p>
-                    <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
-                    
-                    <form class="email-collector" action="#" method="POST">
-                        <input type="text" required placeholder="First Name">
-                        <input type="email" required placeholder="Email">
-                        <button class="btn btn-primary" type="submit">Register</button>
-                    </form>
-                    
-                    <p class="fine-print">We'll never share your information without your permission</p>
-                </div>
-        </div>
-
+        <form class="email-collector" action="#" method="POST">
+            <input type="text" required placeholder="first name">
+            <input type="email" required  placeholder="email">
+            <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+        
+        <p class="fine-print">We'll never share your information without your permission</p>
     </div>
-
-     <!-- preload images -->
-     <div class="hidden">
-        <script type="text/javascript">
-    
-    function preloader() {
-        if (document.images) {
-            img1 = new Image();
-            img2 = new Image();
-    
-            img1.src = "http://michaelrinella.com/bbq-splash-page/images/bbq-pic1-dk2-min.jpg";
-            img2.src = "http://michaelrinella.com/bbq-splash-page/images/bbq-pic1-min.jpg";
-        }
-    }
-    function addLoadEvent(func) {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function') {
-            window.onload = func;
-        } else {
-            window.onload = function() {
-                if (oldonload) {
-                    oldonload();
-                }
-                func();
-            }
-        }
-    }
-    addLoadEvent(preloader);
-    
-        </script>
-    </div>
-
 </body>
 
 </html>
