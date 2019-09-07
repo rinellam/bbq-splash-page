@@ -9,6 +9,10 @@ font-family: 'Source Sans Pro', sans-serif;
 gloabal
 ============ */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-size: 1rem;
@@ -31,12 +35,13 @@ typography
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
-    color: #fff;
-    margin: 2em 0;
+    color: #ffffff;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.3125rem;
+    margin: 0;
 }
 /* adjacent sibling combinatorr */
 h1 + p {
@@ -44,12 +49,14 @@ h1 + p {
     font-weight: 900;
     font-size: 1.3125rem;
     margin: 0;
+    text-transform: uppercase;
 }
-
-h2 + P {
+/* adjacent sibling combinatorr */
+h2 + p {
     color: #f18119;
     font-weight: 900;
     font-size: 1rem;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
@@ -58,6 +65,7 @@ h2 + P {
     font-weight: 900;
     color: #f18119;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .fine-print {
@@ -74,16 +82,73 @@ intro section
 ============ */
 
 .intro {
-    display: flex;
-    flex-direction: column;
     background-color: #404040;
     background-image: url(/images/bbq-pic1-dk2-min.jpg);
     background-position: center;
     background-size: cover;
-    padding: 0 .25em 1em;
+    padding: 0 .5em 2em;
 }
 
 .top-text {
     order: -2;
 }
 
+/* ============
+main content
+============ */
+
+.main-content {
+    padding: 2em 1em;
+}
+
+.contain-content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.contain-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* ============
+media queries
+============ */
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+    }
+    .container {
+        display: flex;
+    }
+
+    .contain-intro {
+        height: 100%;
+    }
+
+    /* typography */
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    /* layout */
+    .intro,
+    .main-content  {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
