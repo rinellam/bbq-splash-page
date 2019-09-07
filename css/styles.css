@@ -184,9 +184,18 @@ media queries
     }
 
     /* layout */
-    .intro,
+    /*.intro,
     .main-content  {
         width: 50%;
+        min-height: 100vh;
+    }*/
+    .intro {
+        width: 60%;
+        min-height: 100vh;
+    }
+
+    .main-content  {
+        width: 40%;
         min-height: 100vh;
     }
 
