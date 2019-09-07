@@ -43,6 +43,7 @@ h2 {
     font-size: 1.3125rem;
     margin: 0;
 }
+
 /* adjacent sibling combinatorr */
 h1 + p {
     color: #f18119;
@@ -51,6 +52,7 @@ h1 + p {
     margin: 0;
     text-transform: uppercase;
 }
+
 /* adjacent sibling combinatorr */
 h2 + p {
     color: #f18119;
@@ -61,7 +63,7 @@ h2 + p {
 }
 
 .top-text {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     font-weight: 900;
     color: #f18119;
     text-transform: uppercase;
@@ -114,13 +116,55 @@ main content
 }
 
 /* ============
+forms
+============ */
+
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: 1em;
+    border: 1px solid #404040;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    color: #ffffff;
+}
+
+/* ============
 media queries
 ============ */
 
 @media (min-width: 500px) {
+
     body {
         font-size: 1.125rem;
     }
+
     .container {
         display: flex;
     }
@@ -138,6 +182,7 @@ media queries
     h1 + p {
         font-size: 1.75rem;
     }
+
     /* layout */
     .intro,
     .main-content  {
@@ -150,5 +195,4 @@ media queries
         flex-direction: column;
         justify-content: center;
     }
-
 }
