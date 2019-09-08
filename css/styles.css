@@ -1,3 +1,5 @@
+/* rinella css */
+
 /*  font-family: 'Source Sans Pro', sans-serif;  */
 
 * {
@@ -62,7 +64,9 @@ h2 + p {
     letter-spacing: 1px;
 }
 
-strong { font-weight: 900; }
+strong { 
+    font-weight: 900; 
+}
 
 
 /* =================
@@ -105,7 +109,7 @@ strong { font-weight: 900; }
    form
    ================= */
    
-   .email-collector {
+.email-collector {
     width: 80%;
     max-width: 300px;
 }
